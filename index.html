@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+<style>
+    body {
+  /* override browser defaults */
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.clearfix {
+  overflow: auto;
+  border: 1px solid rgb(205, 24, 61);
+  background-color: rgb(233, 225, 225);
+}
+
+.center {
+  padding: 10px;
+  /* vertical centering of <h1> */
+  text-align: center;
+  /* horizontal centering of <h1> */
+}
+
+.logo {
+  position: absolute;
+  left: 40px;
+  top: 0px;
+  border: 1px solid blue;
+  z-index: 1;
+  border-radius: 20px;
+  border-color: #e60073;
+  width: 150px;
+  height: 100px;
+  /* Make the logo and <h1> overlap */
+}
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fc7a7a;
+}
+
+li {
+  float:left;
+  padding-inline-start: 15%;
+  font-size: 20px;
+}
+
+li a {
+  display: block;
+  color: rgb(20, 14, 13);
+  font-weight: bold;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #efeceb;
+}
+.glow {
+  font-size: 40px;
+  color: #070404;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.header{
+    background: rgb(244, 239, 239);
+    block-size: 70px;
+    
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.card {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 20px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.price {
+  color: rgb(222, 24, 24);
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #0dea11;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2px 16px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(242, 98, 117);
+  color: white;
+}
+.button {
+  border-radius: 5px;
+  border-color: #efeceb;
+  color: rgb(250, 246, 241);
+  background-color: #94f78f;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: rgb(245, 136, 40);
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+    
+        
+
+        <img class="logo" src="https://tse2.mm.bing.net/th?id=OIP.FLuVHB7ASalG9WbTTwN8qAAAAA&pid=Api&P=0" alt="Logo" width="278" height="100">
+        <h1 class="glow">!!..Welcome to Cakey Bakey..!!</h1>
+
+      
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#order">Order</a></li>
+      <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      
+        
+       
+        
+      </ul>
+    <div class="container">
+
+      <div class="card">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.dCdpaK33ZSKUszqsWR4-TAHaE6&pid=Api&P=0" style="width:100%">
+        <h1>Biscuits</h1>
+        <br><p class="price">Rs.150/kg</p></br>
+        <p><button>Add to Cart</button></p>
+      </div><div class="card">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.UwxUxN2mIr--z4x-DtHGcQHaFj&pid=Api&P=0"style="width:100%" >
+        <h1>Cup Cakes</h1>
+        <p class="price">Rs.100/pcs</p>
+        <br><p><button>Add to Cart</button></p></br>
+      </div>
+      <div class="card">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.SXrqxbqIcaaFaNVxRj1Y6AHaEo&pid=Api&P=0"style="width:100%" >
+        <h1>Cake</h1>
+        <br><p class="price">Rs.250/kg</p></br>
+        
+        <p><button>Add to Cart</button></p>
+      </div>
+      <div class="card">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.HHkMqpCSVREy0FOlQYMKlgHaE8&pid=Api&P=0" style="width:100%">
+        <h1>Other products</h1>
+        <p class="price">Available</p>
+        <br><p><button>Add to Cart</button></p></br>
+      </div>
+      </div>
+    <footer>
+      <button class="button button1">Learn More</button>
+
+    </footer>
+    
+      
+</body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</html>
